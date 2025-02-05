@@ -1,20 +1,30 @@
 {
-  "name": "noderest",
+  "name": "test",
   "version": "1.0.0",
-  "description": "sd",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "format": "prettier --write *.js"
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NattiiZ/Test.git"
   },
   "keywords": [],
-  "author": "Phatsakon",
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NattiiZ/Test/issues"
+  },
+  "homepage": "https://github.com/NattiiZ/Test#readme",
+  "description": "Respoitory for Back-End \r created by Nattawut.s30011 for JavaScript Section-3",
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2"
+  },
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2"
-  },
-  "devDependencies": {
-    "prettier": "^3.4.2"
   }
 }

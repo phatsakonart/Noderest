@@ -32,7 +32,7 @@ let books = [
 ];
 
 // route to get all books
-app.get("/books", (req, res) => {
+app.get("/", (req, res) => {
     res.json(books);
 });
 
@@ -88,29 +88,3 @@ app.delete('/books/:id', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`);
 });
-
-
-
-// ====================================================================================================
-
-
-
-// require('dotenv').config();
-
-
-// const express = require("express");
-// const req = require("express/lib/request");
-// const app = express();
-// const port = process.env.PORT || 3000;
-
-
-// app.get("/", (req, res) => 
-// {
-//     res.send("Hello World! Nattawut");
-// });
-
-// app.listen(port, () => {
-//     console.log(`Example app listening at http://localhost:${port}`);
-// });
-
-// console.log(process.env.Msg);
