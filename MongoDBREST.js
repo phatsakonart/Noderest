@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 
 // Connect to the MongoDB database
-mongoose.connect('mongodb://admin:ZEZbdd93268@node71662-phat0.proen.app.ruk-com.cloud:11778', {
+mongoose.connect('mongodb://admin:ZEZbdd93268@node71662-phat0.proen.app.ruk-com.cloud:27017', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -66,6 +66,6 @@ app.delete('/books/:id', async (req, res) => {
 });
 
 
-app.listen(3000, () => {
+app.listen(5000, () => {
   console.log('API server is listening on port 3000');
 });
